@@ -1,15 +1,199 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
-
+body {
+  position: absolute;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Red Hat Display";
-  font-weight: 500;
 }
 
 .heading {
   align-items: center;
   text-align: center;
   margin: 3rem 0;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+}
+.right-hero,
+img {
+  margin-left: 2rem;
+  flex-grow: 1;
+}
+.center-hero {
+  flex-grow: 1;
+}
+.left-hero {
+  margin-right: 2rem;
+  flex-grow: 1;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 14px;
+  color: #87879d;
+  text-align: center;
+  padding: 2rem;
+  width: 500px;
+}
+
+.heading-text {
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.download,
+.whatis,
+.bottom-button {
+  color: #fff;
+  border-radius: 40px;
+  padding: 15px;
+  margin-right: 1.5rem;
+  font-family: "Red Hat Display";
+  cursor: pointer;
+}
+
+.download {
+  background-color: #4d96a9;
+}
+.download:hover {
+  background-color: #8fe3f9;
+}
+.whatis,
+.bottom-button {
+  background-color: #855fb1;
+}
+
+.whatis:hover,
+.bottom-button:hover {
+  background-color: #d9b8ff;
+}
+
+.photo-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.photo-section img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.fourth-section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.overline {
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  color: #4d96a9;
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.meeting-text {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 48px;
+  width: 500px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Red Hat Display";
+  background-image: linear-gradient(#4d97a9a8, #4d97a9d4),
+    url("./assets/desktop/image-footer.jpg");
+  height: 300px;
+  width: 100vw;
+  background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    background-image: linear-gradient(#4d97a9a8, #4d97a9d4),
+      url("./assets/mobile/image-footer.jpg");
+    width: 100vw;
+  }
+}
+
+.footer-left {
+  display: flex;
+  color: #fafafa;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.footer-center {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #fafafa;
+  width: 300px;
+}
+
+.footer-right {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.line {
+  border-left: 2px solid #87879d28;
+  height: 45px;
+}
+
+.one,
+.two {
+  font-family: "Red Hat Display";
+  font-weight: 500;
+  font-size: 14px;
+  color: #87879d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  padding: 10px;
+  border: 1px solid #87879d28;
+  background-color: #fafafa;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: -20px;
+  position: relative;
 }
