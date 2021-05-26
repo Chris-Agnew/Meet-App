@@ -154,7 +154,7 @@ body {
 
 .footer-center {
   display: flex;
-  text-align: left;
+  text-align: center;
   justify-content: center;
   align-items: center;
   font-size: 14px;
@@ -224,7 +224,7 @@ body {
 
   .footer-center {
     display: flex;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     font-size: 14px;
