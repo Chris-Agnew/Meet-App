@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
-
+html,
+body {
+  overflow-x: hidden;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +10,6 @@
 }
 
 .heading {
-  align-items: center;
   text-align: center;
   margin: 3rem 0;
 }
@@ -261,7 +263,7 @@ img {
     margin: 0;
   }
   .photo-section img {
-    width: 100px;
+    width: 150px;
     border-radius: 10px;
   }
   .text {
@@ -331,8 +333,8 @@ img {
   }
   .footer {
     background-image: linear-gradient(#4d97a9a8, #4d97a9d4),
-      url("./assets/mobile/image-footer.jpg");
-    width: 100%;
+      url("./assets/mobile/image-footer.jpg") cover center;
+    width: 100vw;
     height: 300px;
     display: grid;
     grid-template-columns: 2;
