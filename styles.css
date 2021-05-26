@@ -21,8 +21,10 @@ body {
   justify-content: space-around;
   flex-grow: 1;
 }
-.right-hero,
-img {
+.right-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 2rem;
   flex-grow: 1;
 }
@@ -34,6 +36,9 @@ img {
   flex-grow: 1;
 }
 .left-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 2rem;
   flex-grow: 1;
 }
@@ -97,7 +102,7 @@ img {
 
 .photo-section img {
   width: 200px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .fourth-section {
@@ -265,7 +270,6 @@ img {
   }
   .photo-section img {
     width: 150px;
-    border-radius: 10px;
   }
   .text {
     display: flex;
@@ -298,13 +302,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }
-  .photo-section img {
-    width: 75px;
-    border-radius: 5px;
-    display: grid;
-    grid-template-columns: 2fr;
-    margin: 0;
-  }
+
   .center-hero {
     text-align: center;
     width: 300px;
@@ -338,8 +336,11 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    width: 200px;
+  }
+
+  .photo img {
+    width: 150px;
+    padding-top: 1rem;
   }
   .heading-text {
     font-size: 24px;
@@ -357,9 +358,18 @@ img {
     justify-content: center;
     align-items: center;
     background: url("./assets/tablet/image-hero.png") center no-repeat;
-    background-size: 100%;
-    object-fit: cover;
-    padding-bottom: 40px;
-    height: 300px;
+    background-size: 75%;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .hidden-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .overline {
+    font-size: 10px;
   }
 }
