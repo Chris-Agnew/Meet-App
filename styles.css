@@ -90,7 +90,7 @@ img {
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .photo-section img {
@@ -291,6 +291,7 @@ img {
     border-radius: 5px;
     display: grid;
     grid-template-columns: 2fr;
+    margin: 0;
   }
   .center-hero {
     text-align: center;
