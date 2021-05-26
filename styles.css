@@ -98,13 +98,12 @@ body {
   justify-content: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  border-radius: 5px;
 }
 
 .photo img {
-  width: 200px;
   border-radius: 5px;
-  padding: 10px;
+  width: 200px;
+  margin: 5px;
 }
 
 .fourth-section {
@@ -271,7 +270,6 @@ body {
   }
   .photo-section img {
     width: 150px;
-    border-radius: 5px;
   }
   .text {
     display: flex;
@@ -297,9 +295,6 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-  .container {
-    width: 100vw;
-  }
   .photo-section {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -338,13 +333,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
   }
 
   .photo img {
     width: 150px;
-    padding-top: 1rem;
-    border-radius: 5px;
   }
   .heading-text {
     font-size: 24px;
