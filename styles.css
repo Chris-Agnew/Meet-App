@@ -253,6 +253,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
   }
   .left-hero {
     display: none;
@@ -279,10 +280,14 @@ img {
   }
   .hidden {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding-bottom: 40px;
+    background: url("./assets/tablet/image-hero.png") center no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    height: 400px;
   }
 }
 @media screen and (max-width: 500px) {
